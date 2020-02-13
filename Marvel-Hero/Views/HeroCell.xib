@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeroCell" customModule="Marvel_Hero" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeroCell" id="gTV-IL-0wX" customClass="HeroCell" customModule="Marvel_Hero" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="461"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="461"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NnW-tU-YES">
+                        <rect key="frame" x="0.0" y="0.0" width="420" height="456"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Marvel" translatesAutoresizingMaskIntoConstraints="NO" id="fWZ-c5-esI">
+                                <rect key="frame" x="0.0" y="0.0" width="420" height="463"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fym-jD-gjB">
+                                <rect key="frame" x="0.0" y="423" width="420" height="40"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="uSW-NZ-UdN">
+                                    <rect key="frame" x="0.0" y="0.0" width="420" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRv-im-FgB">
+                                            <rect key="frame" x="8" y="8" width="360" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzM-LL-r4K">
+                                            <rect key="frame" x="388" y="8" width="22" height="22"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="22" id="C7R-ux-a6c"/>
+                                                <constraint firstAttribute="height" constant="22" id="fCa-x8-cFe"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <state key="normal" image="star"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="kzM-LL-r4K" secondAttribute="trailing" constant="10" id="7ST-pC-SqS"/>
+                                        <constraint firstItem="kzM-LL-r4K" firstAttribute="leading" secondItem="hRv-im-FgB" secondAttribute="trailing" constant="20" id="7lx-1y-BSa"/>
+                                        <constraint firstAttribute="bottom" secondItem="kzM-LL-r4K" secondAttribute="bottom" constant="10" id="SxS-pv-wC2"/>
+                                        <constraint firstItem="hRv-im-FgB" firstAttribute="bottom" secondItem="uSW-NZ-UdN" secondAttribute="bottomMargin" id="Xhz-mu-CrT"/>
+                                        <constraint firstItem="hRv-im-FgB" firstAttribute="top" secondItem="kzM-LL-r4K" secondAttribute="top" id="brW-1C-0Uj"/>
+                                        <constraint firstItem="hRv-im-FgB" firstAttribute="leading" secondItem="uSW-NZ-UdN" secondAttribute="leadingMargin" id="zls-4H-fRc"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ndz-Uj-MeU"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="fWZ-c5-esI" secondAttribute="bottom" constant="-7" id="35e-cE-564"/>
+                            <constraint firstItem="fym-jD-gjB" firstAttribute="bottom" secondItem="fWZ-c5-esI" secondAttribute="bottom" id="QAj-Ug-JcN"/>
+                            <constraint firstItem="fWZ-c5-esI" firstAttribute="leading" secondItem="NnW-tU-YES" secondAttribute="leading" id="kAl-fK-Kio"/>
+                            <constraint firstItem="fWZ-c5-esI" firstAttribute="trailing" secondItem="fym-jD-gjB" secondAttribute="trailing" id="p6U-j4-Z4J"/>
+                            <constraint firstItem="fWZ-c5-esI" firstAttribute="leading" secondItem="fym-jD-gjB" secondAttribute="leading" id="vgQ-BA-WZI"/>
+                            <constraint firstItem="fWZ-c5-esI" firstAttribute="top" secondItem="NnW-tU-YES" secondAttribute="top" id="yK8-CF-6Ym"/>
+                            <constraint firstAttribute="trailing" secondItem="fWZ-c5-esI" secondAttribute="trailing" id="zzn-YH-mZu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="NnW-tU-YES" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Swd-Gp-8cj"/>
+                <constraint firstAttribute="trailing" secondItem="NnW-tU-YES" secondAttribute="trailing" id="Xtu-hJ-QQU"/>
+                <constraint firstAttribute="bottom" secondItem="NnW-tU-YES" secondAttribute="bottom" constant="5" id="gw5-up-KOJ"/>
+                <constraint firstItem="NnW-tU-YES" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zHt-gG-aoy"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="420" height="461"/>
+            <connections>
+                <outlet property="favBtnClicked" destination="kzM-LL-r4K" id="ZjC-i0-Gpd"/>
+                <outlet property="heroAvatarImg" destination="fWZ-c5-esI" id="gTZ-8J-irT"/>
+                <outlet property="heroNameLbl" destination="hRv-im-FgB" id="DNU-WB-7wh"/>
+            </connections>
+            <point key="canvasLocation" x="-307.19999999999999" y="177.66116941529236"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Marvel" width="512" height="512"/>
+        <image name="star" width="100" height="100"/>
+    </resources>
+</document>
